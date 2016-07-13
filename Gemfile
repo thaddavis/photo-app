@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
+# Stripe Gem for payment processing
+gem 'stripe'
 # devise authentication
 gem 'devise'
 # for bootstrap styling
