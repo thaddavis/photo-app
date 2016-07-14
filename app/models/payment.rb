@@ -11,7 +11,6 @@ class Payment < ApplicationRecord
   end
 
   def process_payment
-    debugger
     customer = Stripe::Customer.create email: email, card: token
     Stripe::Charge.create customer: customer.id,
                           amount: 1000,
